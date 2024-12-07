@@ -7,5 +7,4 @@ let accountCity = "DubrajPur"; // Declare `accountCity` properly
 accounEmail = "hc@email.com";
 accountCity = "bengaluru";
 
-// Remove accountId from `console.table` since it's not declared
 console.table([accountName,accounEmail, accountPassword, accountCity]);
