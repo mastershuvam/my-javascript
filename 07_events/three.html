@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start and Stop Example</title>
+</head>
+<body>
+    <h1>Welcome to the JavaScript Repo!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        
+        const changeText = function () {
+            document.querySelector('h1').innerHTML = "It is the best repo for JS!";
+            console.log("Text Changed");
+        };
+
+
+        let changeMe;
+
+        
+        document.querySelector('#start').addEventListener('click', function () {
+
+            changeMe = setTimeout(changeText, 2000);
+            console.log("STARTED");
+        });
+
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearTimeout(changeMe);
+            console.log("STOPPED");
+        });
+    </script>
+</body>
+</html>
+
